@@ -13,12 +13,11 @@ class XylophoneApp extends StatelessWidget {
 
   Expanded buildKey(dynamic color, int soundKey) {
     return Expanded(
-      child: FlatButton(
+      child: TextButton(
         onPressed: () {
           playSound(soundKey);
         },
         child: null,
-        color: color,
       ),
     );
   }
